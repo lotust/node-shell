@@ -1,3 +1,8 @@
-const pwd = process.cwd();
+let pwd = process.cwd();
 
-module.exports = pwd;
+function writepwd() {
+  process.stdout.write(pwd);
+  process.stdout.write('\nprompt > ');
+}
+
+module.exports = writepwd;
